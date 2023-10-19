@@ -1,4 +1,4 @@
-package com.pizzaria.demo;
+package com.pizzaria.main;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
