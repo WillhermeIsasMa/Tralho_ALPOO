@@ -1,3 +1,4 @@
+package com.pizzaria.main.model;
 
 @getter
 @setter 

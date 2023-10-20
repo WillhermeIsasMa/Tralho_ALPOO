@@ -1,4 +1,6 @@
-import Model.Pedido;
+package com.pizzaria.main.model;
+
+import model.Pedido;
 @getter
 @setter
 
