@@ -1,8 +1,7 @@
 public interface Produto {
-    private String nome, descricao;
-    private float valor;
+    public String nome, descricao;
+    public float valor;
 
-    public boolean atualizarValor(float){
-        return false;
+    public boolean atualizarValor(float nvalor){
     }
 }

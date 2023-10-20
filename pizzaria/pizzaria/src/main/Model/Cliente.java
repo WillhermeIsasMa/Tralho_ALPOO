@@ -5,11 +5,11 @@ public class Cliente {
     private String email, nome, enderecoEntrega;
     private int cpf, telefone;
     
-    boolean public logar(){
+    public boolean logar(){
         return false;
     }
     
-    boolean public resetSenha(){
+    public boolean resetSenha(){
         return false;
     }
 
