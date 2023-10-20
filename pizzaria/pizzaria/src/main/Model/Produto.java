@@ -1,3 +1,5 @@
+package com.pizzaria.main.model;
+
 public class Produto {
     private String nome, descricao;
     private float valor;
