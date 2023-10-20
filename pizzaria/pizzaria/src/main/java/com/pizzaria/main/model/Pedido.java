@@ -1,26 +1,27 @@
 package com.pizzaria.main.model;
+import lombok.Getter;
+import lombok.Setter;
+import lombok.NoArgsConstructor;
+import lombok.AllArgsConstructor;
+
+import java.security.Timestamp;
+import java.util.Date;
 
 
-@getter
-@setter 
+@Getter
+@Setter
+@AllArgsConstructor
+@NoArgsConstructor 
 public class Pedido {
     private int numero;
     private String status, pagamento;
     private float valor;
-    private timestamp momento;
+    private Timestamp momento;
 
     public void adicionarItem(){
 
     }
     public void finalizarPedido(){
 
-    }
-
-    public void pedido(int n, String s, String p, float v, timestamp m){
-        numero = n;
-        status = s;
-        pagamento = p;
-        valor = v;
-        momento = m;
     }
 }
