@@ -1,3 +1,3 @@
-public class Pizza implements Produto {
+public class Pizza extends Produto {
     
 }

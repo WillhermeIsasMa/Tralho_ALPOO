@@ -15,10 +15,10 @@ public class Pedido {
     }
 
     public void pedido(int n, String s, String p, float v, timestamp m){
-        this.n=numero;
-        this.s=status;
-        this.p=pagamento;
-        this.v=valor;
-        this.m=momento;
+        numero = n;
+        status = s;
+        pagamento = p;
+        valor = v;
+        momento = m;
     }
 }
