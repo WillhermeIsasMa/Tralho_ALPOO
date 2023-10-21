@@ -5,13 +5,13 @@ import lombok.NoArgsConstructor;
 import lombok.AllArgsConstructor;
 
 import java.security.Timestamp;
-import java.util.Date;
+
 
 
 @Getter
 @Setter
 @AllArgsConstructor
-@NoArgsConstructor 
+@NoArgsConstructor
 public class Pedido {
     private int numero;
     private String status, pagamento;
