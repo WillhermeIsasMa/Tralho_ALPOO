@@ -1,3 +1,67 @@
+html,
+
 body {
-    background: blue;
+    margin: 0;
+    height: 100%;
+    width: 100%;
 }
+
+
+.headerbar {
+    background-color: #DEB887;
+    align-items: baseline;
+}
+
+
+#imgpg {
+    height: 80px;
+    padding-left: 90px;
+}
+
+.navbaraside {
+    display: flex;
+    background-color: #8B0000;
+    justify-content: space-between;
+    padding: 70px 0px 120px 0px;
+}
+
+.menu {
+    padding: 10px; /* Espaçamento interno */
+    
+}
+
+
+#B1{
+    background-color: #DEB887; /* Cor de fundo dos botões */
+    color: white; 
+    border: none; 
+    padding: 10px 20px; 
+    margin-right: 10px; 
+    cursor: pointer; 
+    position: absolute; /* Posicionamento absoluto */
+    right: 10px /* Distância da direita */
+}
+
+#B2{
+    background-color: #000 ; /* Cor de fundo dos botões */
+    color: white; 
+    border: none; 
+    padding: 10px 20px;
+    margin-right: 10px; 
+    cursor: pointer; 
+    border-radius: 25px
+}
+
+.menu button:last-child {
+    margin-left: 75%;
+}
+.menu {
+    padding: 10px; /* Espaçamento interno */
+    position: relative; /* Necessário para posicionamento absoluto */
+}
+.menu-buttons{
+    padding: 10px; /* Espaçamento interno */
+    position: relative; /* Necessário para posicionamento absoluto */
+    
+}
+
