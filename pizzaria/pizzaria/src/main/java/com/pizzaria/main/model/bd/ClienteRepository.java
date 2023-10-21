@@ -1,8 +1,8 @@
 package com.pizzaria.main.model.bd;
 
-//import org.springframework.data.repository.CrudRepository;
-//import java.util.List;
+import org.springframework.data.repository.CrudRepository;
+import com.pizzaria.main.model.Cliente;
 
-public class ClienteRepository {
-    
+public interface ClienteRepository extends CrudRepository<Cliente, Integer> {
+
 }

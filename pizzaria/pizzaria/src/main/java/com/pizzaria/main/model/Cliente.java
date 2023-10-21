@@ -10,23 +10,14 @@ import lombok.AllArgsConstructor;
 @AllArgsConstructor
 @NoArgsConstructor
 public class Cliente {
-    private String email, nome, enderecoEntrega;
+    private String email, nome, enderecoEntrega, senha;
     private int cpf, telefone;
-    
-    public boolean logar(){
-        return false;
-    }
-    
-    public boolean resetSenha(){
+
+    public boolean logar() {
         return false;
     }
 
-    public void cliente(String email, String nome, String enderecoEntrega, int cpf, int telefone){
-        this.email=email;
-        this.nome=nome;
-        this.enderecoEntrega=enderecoEntrega;
-        this.cpf=cpf;
-        this.telefone=telefone;
+    public boolean resetSenha() {
+        return false;
     }
-
 }
