@@ -88,3 +88,22 @@ input{
     font-size: 15px;
 }
 
+#bodycar{
+    background-color: #F5F5DC;
+}
+
+#img-cardapio{
+    padding: 2px 0px 2px 455px;
+}
+
+#headerbar{
+    justify-content: center;
+    background-color: #8B0000;
+}
+
+#maincard{
+
+}
+
+
+
