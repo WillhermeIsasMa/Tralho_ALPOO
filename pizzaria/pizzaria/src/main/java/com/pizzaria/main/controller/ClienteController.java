@@ -9,10 +9,10 @@ import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.servlet.ModelAndView; */
 import org.springframework.stereotype.Controller;
 
-//import com.pizzaria.main.model;
+import com.pizzaria.main.model;
 
 @Controller
 public class ClienteController {
-    @Autowired
+    
     
 }

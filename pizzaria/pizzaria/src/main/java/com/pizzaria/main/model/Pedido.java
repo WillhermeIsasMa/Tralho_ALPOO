@@ -10,6 +10,8 @@ import jakarta.persistence.Entity;
 import jakarta.persistence.GeneratedValue;
 import jakarta.persistence.GenerationType;
 import jakarta.persistence.Id;
+import jakarta.persistence.JoinColumn;
+import jakarta.persistence.ManyToOne;
 import jakarta.persistence.Table;
 
 
@@ -29,7 +31,12 @@ public class Pedido {
     private float valor;
     private Timestamp momento;
 
+    @ManyToOne
+    @JoinColumn(name = "cliente_cpf")
     private Cliente cliente;
+
+    @JoinColumn(name = "")
+    private ItemPedido itemPedido;
 
     public void adicionarItem(){
 
