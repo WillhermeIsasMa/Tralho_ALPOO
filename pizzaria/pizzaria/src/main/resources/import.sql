@@ -1,0 +1,1 @@
+INSERT INTO tb_produto (nome, descricao, valor, codigo) VALUES ("Mussarela", "Queijo mussarela, tomate, azeitona",25)
