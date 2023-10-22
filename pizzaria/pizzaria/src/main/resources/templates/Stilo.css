@@ -1,66 +1,31 @@
-html,
-
-body {
-    margin: 0;
-    height: 100%;
-    width: 100%;
+body{
+    background-color:#FFFAF0 ;
+    font-family: 'Open Sans', sans-serif;
+    font-family: 'Rubik', sans-serif;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 15px;
 }
 
-
-.headerbar {
-    background-color: #DEB887;
-    align-items: baseline;
-}
-
-
-#imgpg {
-    height: 80px;
-    padding-left: 90px;
-}
-
-.navbaraside {
+header{
     display: flex;
-    background-color: #8B0000;
+    flex-direction: row;
     justify-content: space-between;
-    padding: 70px 0px 120px 0px;
+    align-items:center;
 }
 
-.menu {
-    padding: 10px; /* Espaçamento interno */
-    
+#title{
+    flex-direction: column;
+    line-height: 10px;
 }
 
-
-#B1{
-    background-color: #DEB887; /* Cor de fundo dos botões */
-    color: white; 
-    border: none; 
-    padding: 10px 20px; 
-    margin-right: 10px; 
-    cursor: pointer; 
-    position: absolute; /* Posicionamento absoluto */
-    right: 10px /* Distância da direita */
+li{
+    display: inline-block;
+    margin: 20px;
 }
 
-#B2{
-    background-color: #000 ; /* Cor de fundo dos botões */
-    color: white; 
-    border: none; 
-    padding: 10px 20px;
-    margin-right: 10px; 
-    cursor: pointer; 
-    border-radius: 25px
-}
-
-.menu button:last-child {
-    margin-left: 75%;
-}
-.menu {
-    padding: 10px; /* Espaçamento interno */
-    position: relative; /* Necessário para posicionamento absoluto */
-}
-.menu-buttons{
-    padding: 10px; /* Espaçamento interno */
-    position: relative; /* Necessário para posicionamento absoluto */
-    
+main{
+    display: flex;
+    flex-direction: row;
+    margin-top: 50px;
 }
