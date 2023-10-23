@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html xmlns="http://www.w3.org/1999/xhtml" xmlns:th="http://www.thymeleaf.org/">
+
 <head>
     <meta charset='utf=8'>
     <link rel="icon" href="img/iconimg.png">
@@ -8,24 +9,37 @@
     <style>
         @import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital@1&family=Rubik:ital@1&display=swap');
     </style>
+    <script src="script.js"></script>
 </head>
 
 <body id="bodycar">
     <header id="headerbar">
 
-    <div id="img-cardapio">
-        <article>
-            <a href="duefratelli.html"><img src="img/logoimg.png" alt="logocard"></a>
-        </article>
-    </div>
-    </header>
-    
-    <main class="navbaraside">
-        <div class="search-container">
-            <input type="text" id="search" placeholder="Pesquisar">
-            <ul id="results"></ul>
+        <div id="img-cardapio">
+            <article>
+                <a href="duefratelli.html"><img src="img/logoimg.png" alt="logocard"></a>
+            </article>
         </div>
-        <script src="script.js"></script>
+    </header>
+
+    <main class="main" id="cardapio">
+        <div class="container">
+            <div class="produtos" id="pizza">
+                <h1>Escolha o sabor</h1>
+                <div class="search-container" id="pizzas">
+                    <input type="text" id="search-pizzas" placeholder="Pesquisar">
+                    <ul id="results-pizzas"></ul>
+                </div>
+            </div>
+
+            <div class="produtos-bebidas">
+                <h1>Escolha a bebida</h1>
+                <div class="search-container" id="bebidas">
+                    <input type="text" id="search-bebidas" placeholder="Pesquisar">
+                    <ul id="results-bebidas"></ul>
+                </div>
+            </div>
+        </div>
     </main>
 </body>
 </html>
