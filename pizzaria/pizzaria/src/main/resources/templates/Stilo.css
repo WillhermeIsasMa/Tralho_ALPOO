@@ -2,7 +2,8 @@ body{
     background-color:#FFFAF0;
     font-family: 'Open Sans', sans-serif;
     font-family: 'Rubik', sans-serif;
-    max-width: 1200px;
+    width: 100%;
+    height: 100%;
     margin: 0 auto;
     padding: 15px;
 }
@@ -47,16 +48,23 @@ a:hover{
     font-size: 15px;
 }
 
-main{
+.main{
     display: flex;
     flex-direction: row;
     margin-top: 50px;
     background-color: #8B0000;
     justify-content: center;
-    padding: 5% 10% 5% 7%;
-
+    padding: 5%;
 }
-
+#cardapio.main{
+    display: block;
+}
+.container{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 100%;
+}
 img{
     width: 170px;
     padding: 10px 10px 10px 35px;
@@ -99,10 +107,6 @@ rodape{
 #img-cardapio{    
 }
 
-.navbaraside{
-
-}
-
 #headerbar{
     justify-content: center;
     background-color: #8B0000;
@@ -117,13 +121,16 @@ rodape{
     position: relative;
     width: 300px;
 }
-
-#search {
+.produtos-pizzas{
+    display: flex;
+    flex-direction: column;
+}
+#search-pizza {
     width: 100%;
     padding: 10px;
 }
 
-#results {
+#results-pizzas, #results-bebidas {
     position: absolute;
     top: 100%;
     left: 0;
@@ -136,13 +143,12 @@ rodape{
     display: none;
 }
 
-#results li {
+#results-pizzas li, #results-bebidas liq {
     padding: 10px;
     border-bottom: 1px solid #ccc;
     cursor: pointer;
 }
 
-#results li:last-child {
+#result li:last-child {
     border-bottom: none;
 }
-
