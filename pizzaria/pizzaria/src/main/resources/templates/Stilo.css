@@ -5,7 +5,8 @@ body{
     width: 100%;
     height: 100%;
     margin: 0 auto;
-    padding: 15px;
+    padding: 10px;
+
 }
 
 header{
@@ -151,4 +152,12 @@ rodape{
 
 #result li:last-child {
     border-bottom: none;
+}
+
+#Criar-Cad{
+    font-size: 10px;
+    color: white;
+    justify-content: center;
+    margin-top: 12px;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 }
