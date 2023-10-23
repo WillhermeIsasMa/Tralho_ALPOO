@@ -88,12 +88,19 @@ input{
     font-size: 15px;
 }
 
+rodape{
+    font-size: 13px;
+}
+
 #bodycar{
     background-color: #F5F5DC;
 }
 
-#img-cardapio{
-    padding: 2px 0px 2px 455px;
+#img-cardapio{    
+}
+
+.navbaraside{
+
 }
 
 #headerbar{
@@ -102,8 +109,40 @@ input{
 }
 
 #maincard{
-
+    margin: 0 auto;
+    padding: 150px;
 }
 
+.search-container {
+    position: relative;
+    width: 300px;
+}
 
+#search {
+    width: 100%;
+    padding: 10px;
+}
+
+#results {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    right: 0;
+    background-color: white;
+    border: 1px solid #ccc;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: none;
+}
+
+#results li {
+    padding: 10px;
+    border-bottom: 1px solid #ccc;
+    cursor: pointer;
+}
+
+#results li:last-child {
+    border-bottom: none;
+}
 
