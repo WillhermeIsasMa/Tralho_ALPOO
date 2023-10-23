@@ -8,15 +8,13 @@ import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.ModelAttribute;
 import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.PostMapping;
-import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
 import com.pizzaria.main.model.Cliente;
 import com.pizzaria.main.model.bd.ClienteRepository;
 
-import jakarta.transaction.Transactional;
+import org.springframework.transaction.annotation.Transactional;
 
-@Controller
-@RequestMapping("/clientes")
+@Controller@RequestMapping("/clientes")
 public class ClienteController {
     @Autowired
     private ClienteRepository clienteRepository;
@@ -38,7 +36,7 @@ public class ClienteController {
     public Cliente cadastrar(@ModelAttribute("cliente") Cliente pcliente) {
         Cliente cliente = new Cliente(pcliente.getEmail(), pcliente.getNome(), pcliente.getSenha(),
                 pcliente.getEnderecoEntrega(), pcliente.getTelefone(), pcliente.getCpf());
-        ClienteRepository.save(cliente);
+        clienteRepository.save(cliente);
         return cliente;
     }
 
