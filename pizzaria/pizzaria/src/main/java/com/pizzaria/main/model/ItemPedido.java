@@ -1,18 +1,17 @@
 package com.pizzaria.main.model;
+
 import lombok.Getter;
 import lombok.Setter;
 import lombok.NoArgsConstructor;
-import org.springframework.stereotype.Component;
+import lombok.AllArgsConstructor;
 
 import jakarta.persistence.Entity;
 import jakarta.persistence.GeneratedValue;
 import jakarta.persistence.GenerationType;
 import jakarta.persistence.Id;
 import jakarta.persistence.JoinColumn;
-import jakarta.persistence.OneToMany;
+import jakarta.persistence.ManyToOne;
 import jakarta.persistence.Table;
-import lombok.AllArgsConstructor;
-
 
 @Getter
 @Setter
@@ -22,13 +21,15 @@ import lombok.AllArgsConstructor;
 @Entity
 @Table(name = "tb_itemPedido")
 public class ItemPedido {
-    private int qtd;
-    private String tamanho;
+    
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private int id;
-
-    @OneToMany
+    
+    private int qtd;
+    private String tamanho;
+    
+    @ManyToOne
     @JoinColumn(name = "produto_codigo")
     private Produto produto;
 }

@@ -14,6 +14,7 @@ import jakarta.persistence.JoinColumn;
 import jakarta.persistence.ManyToOne;
 import jakarta.persistence.OneToMany;
 import jakarta.persistence.Table;
+import java.util.List;
 
 
 
@@ -38,10 +39,11 @@ public class Pedido {
 
     @OneToMany
     @JoinColumn(name = "produto_codigo")
-    private Produto produto;
+    private List<Produto> produtos;
 
+    @OneToMany
     @JoinColumn(name = "id_itemPedido")
-    private ItemPedido itemPedido;
+    private List<ItemPedido> itemPedido;
 
     public void adicionarItem(){
         
