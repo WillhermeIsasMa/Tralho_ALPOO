@@ -29,10 +29,6 @@ public class Produto {
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private int codigo;
 
-    
-    @ManyToOne
-    private Produto produto;
-
     public boolean atualizarValor(float nvalor) {
         return false;
     }
