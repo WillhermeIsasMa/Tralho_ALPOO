@@ -27,18 +27,16 @@ public class ClienteController {
         return result;
     }
 
-    @GetMapping(value = "/{id}")
-    public Cliente findById(@PathVariable Integer cpf) {
+    @GetMapping(value = "/clientes/{cpf}")
+    public Cliente findByCPF(@PathVariable int cpf) {
         Cliente result = clienteRepository.findById(cpf).get();
         return result;
     }
 
     @PostMapping("/cadastroCliente")
     @Transactional
-    public Cliente cadastrar(@ModelAttribute("cliente") Cliente pcliente) {
-        Cliente cliente = new Cliente(pcliente.getEmail(), pcliente.getNome(), pcliente.getSenha(),
-                pcliente.getEnderecoEntrega(), pcliente.getTelefone(), pcliente.getCpf());
-        ClienteRepository.save(cliente);
+    public Cliente cadastrar(@RequestBody Cliente cliente) {
+        clienteRepository.save(cliente);
         return cliente;
     }
 
