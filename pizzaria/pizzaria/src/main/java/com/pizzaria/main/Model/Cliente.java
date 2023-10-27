@@ -1,11 +1,7 @@
 package com.pizzaria.main.Model;
-
 import lombok.Getter;
 import lombok.Setter;
 import lombok.NoArgsConstructor;
-
-//import com.pizzaria.main.controller.ClienteController;
-
 import jakarta.persistence.Entity;
 import jakarta.persistence.Id;
 import jakarta.persistence.Table;

@@ -21,9 +21,11 @@ import lombok.AllArgsConstructor;
 public class Produto {
     private String pizza, bebida, descricao;
     private float valor;
+    
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private int codigo;
+    
 
     public boolean atualizarValor(float nvalor) {
         return false;
