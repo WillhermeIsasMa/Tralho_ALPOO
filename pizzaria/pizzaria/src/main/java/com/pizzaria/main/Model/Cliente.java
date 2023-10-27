@@ -19,10 +19,10 @@ import lombok.AllArgsConstructor;
 @Entity
 @Table(name = "tb_cliente")
 public class Cliente {
-    private String email, nome, enderecoEntrega, senha;
+    private String email, nome, endereco_Entrega, senha;
     @Id
-    private int cpf;
-    private int telefone;
+    private long cpf;
+    private long telefone;
 
     public boolean resetSenha() {
         return false;
