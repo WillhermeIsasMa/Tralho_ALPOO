@@ -1,0 +1,14 @@
+{
+    "configurations": [
+        {
+            "type": "java",
+            "name": "Spring Boot-PizzariaApplication<pizzaria>",
+            "request": "launch",
+            "cwd": "${workspaceFolder}",
+            "mainClass": "com.pizzaria.main.PizzariaApplication",
+            "projectName": "pizzaria",
+            "args": "",
+            "envFile": "${workspaceFolder}/.env"
+        }
+    ]
+}
