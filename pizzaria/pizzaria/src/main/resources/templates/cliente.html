@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="pt-br"   xmlns="http://www.thymeleaf.org">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>DueFratelli</title>
+    </head>
+    <body>
+        <h1>Clientes</h1>
+        <ul>
+            <li th:each="cliente : ${usuarios}">
+                <p th:text="${cliente.nome}"></p>
+                <p th:text="${cliente.cpf}"></p>
+                <p th:text="${cliente.telefone}"></p>
+                <p th:text="${cliente.email}"></p>
+                <p th:text="${cliente.endereco_Entrega}"></p>
+            </li>
+    
+        </ul>
+    </body>
+    </html>
