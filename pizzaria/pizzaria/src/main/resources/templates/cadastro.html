@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="pt-br" xmlns="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DueFratelli - Cadastro</title>
+</head>
+<body>
+    <h1>Cadastro</h1>
+
+    <div>
+        <form th:action="@{/cadastro}"  method="post">
+            <div>
+                <label class="form-label">Nome</label>
+                <input class="form-control" type="text" name="nome">
+            </div>    
+            <div>
+                <label for="form-label">CPF</label>
+                <input class="form-control" type="text" name="cpf">
+            </div>
+            <div>
+                <label class="form-label">E-mail</label>
+                <input class="form-control" type="text" name="email">
+            </div>
+            <div>
+                <label class="form-label">Telefone</label>
+                <input class="form-control" type="text" name="telefone">
+            </div>
+            <div>
+                <label class="form-label">Endereço</label>
+                <input class="form-control" type="text" name="endereco_Entrega">
+            </div>
+            <div>
+                <label class="form-label">Senha</label>
+                <input class="form-control" type="text" name="senha">
+            </div>
+            <button class="btn btn-primary" type="submit">Cadastrar</button>
+        </form>
+    </div>
+</body>
+</html>

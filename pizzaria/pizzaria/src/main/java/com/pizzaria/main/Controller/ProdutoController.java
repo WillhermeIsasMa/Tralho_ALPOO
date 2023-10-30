@@ -26,7 +26,7 @@ public class ProdutoController {
         return cardapio;
     }
 
-    @PostMapping
+    @PostMapping(value = "/novoProduto")
     public Produto insert(@RequestBody Produto produto){
         Produto result = produtoRepository.save(produto);
         return result;
