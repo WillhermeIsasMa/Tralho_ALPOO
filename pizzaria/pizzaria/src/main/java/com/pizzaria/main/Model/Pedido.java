@@ -5,6 +5,7 @@ import lombok.Setter;
 import lombok.NoArgsConstructor;
 import lombok.AllArgsConstructor;
 import java.security.Timestamp;
+
 import jakarta.persistence.Entity;
 import jakarta.persistence.GeneratedValue;
 import jakarta.persistence.GenerationType;
@@ -18,6 +19,7 @@ import jakarta.persistence.Table;
 @AllArgsConstructor
 @NoArgsConstructor
 
+
 @Entity
 @Table (name = "tb_pedido")
 public class Pedido {
@@ -28,6 +30,7 @@ public class Pedido {
     private float valor;
     private Timestamp momento;
 
+    
     @ManyToOne
     @JoinColumn(name = "cliente_cpf", nullable = false)
     private Cliente clientes;

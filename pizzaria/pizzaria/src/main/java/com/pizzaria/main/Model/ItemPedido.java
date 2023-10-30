@@ -17,6 +17,7 @@ import lombok.Setter;
 @AllArgsConstructor
 @NoArgsConstructor
 
+
 @Entity
 @Table(name = "tb_item_pedido")
 public class ItemPedido {    
@@ -26,6 +27,7 @@ public class ItemPedido {
     private int qtd;
     private String tamanho;
 
+    
     @ManyToOne
     @JoinColumn(name = "codigo_produto")
     private Produto produtos;

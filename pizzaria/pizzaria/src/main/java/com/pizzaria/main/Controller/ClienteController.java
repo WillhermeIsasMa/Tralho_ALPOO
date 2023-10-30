@@ -25,12 +25,9 @@ public class ClienteController {
     return usuarios;
     }
 
-
-
-    @PostMapping
+    @PostMapping(value = "/cadastrar")
     public Cliente insert(@RequestBody Cliente cliente){
         Cliente result = clienteRepository.save(cliente);
         return result;
     }
-    
 }

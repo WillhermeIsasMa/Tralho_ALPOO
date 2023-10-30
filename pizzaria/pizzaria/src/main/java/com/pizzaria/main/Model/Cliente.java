@@ -5,6 +5,8 @@ import lombok.NoArgsConstructor;
 
 import java.util.List;
 
+import org.springframework.stereotype.Component;
+
 import jakarta.persistence.Column;
 import jakarta.persistence.Entity;
 import jakarta.persistence.Id;
@@ -17,6 +19,7 @@ import lombok.AllArgsConstructor;
 @AllArgsConstructor
 @NoArgsConstructor
 
+@Component
 @Entity
 @Table(name = "tb_cliente")
 public class Cliente {
@@ -25,6 +28,7 @@ public class Cliente {
     private long cpf;
     private long telefone;
 
+    
     @OneToMany (mappedBy = "clientes")
     @Column (nullable = true)
     private List<Pedido> pedidos;

@@ -20,6 +20,7 @@ import lombok.AllArgsConstructor;
 @AllArgsConstructor
 @NoArgsConstructor
 
+
 @Entity
 @Table(name = "tb_produto")
 public class Produto {
@@ -30,6 +31,7 @@ public class Produto {
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private int codigo;
 
+    
     @OneToMany (mappedBy = "produtos")
     @Column (nullable = true)
     private List<ItemPedido> itemPedido;
