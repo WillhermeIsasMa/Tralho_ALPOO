@@ -31,9 +31,5 @@ public class ProdutoController {
         Produto result = produtoRepository.save(produto);
         return result;
     }
-    /*public List<Produto> findall(){
-        List<Produto> result = produtoRepository.findAll();
-        result.addObject("cardapio", "MSG");
-        return result;
-    }*/
+
 }
